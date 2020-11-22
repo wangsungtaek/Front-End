@@ -1,0 +1,72 @@
+:root{
+  --text-color : #f0f4f5;
+  --background-color : #263343;
+  --accent-color : #d49466;
+}
+
+body {
+  margin : 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+a{
+  color: var(--text-color);
+  text-decoration :none;
+}
+i {
+  color: var(--text-color);
+}
+.navbar {
+  background-color : var(--background-color);
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding : 8px 20px;
+}
+.navbar__title {
+  font-size : 24px;
+}
+.navbar__title i {
+  color : var(--accent-color);
+}
+.navbar__title a {
+  padding-left : 10px;
+}
+.navbar__menu {
+  display:flex;
+  list-style-type: none;
+  padding-left : 0px;
+}
+.navbar__menu li {
+  font-size : 15px;
+  font-weight: bold;
+  padding : 8px 12px;
+}
+.navbar__menu li:hover {
+  background-color : var(--accent-color);
+  border-radius : 4px;
+}
+.navbar__side_button {
+  font-size : 24px;
+}
+.navbar__side_button a {
+  padding-left : 10px
+}
+.navbar__toogleBtn {
+  display: none;
+  position : absolute;
+  right: 32px;
+  font-size: 24px;
+  color : var(--accent-color);
+}
+
+@media screen and (max-width : 768px){
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding : 8px 24px;
+  }
+  .navber__menu {
+    display: none;
+    flex-direction: column;
+  }
+}
